@@ -1,0 +1,10 @@
+此文件为文件说明，仅用于此文件夹：data/original
+
+train_product.tsv，为将50万已标注的数据集分离的商品描述文件，用于下一步的分词处理
+train_product2.tsv，为分离出的50万商品描述数据处理后的文件
+train_label.tsv,为50万已标注的数据集分离出的商品标签
+train_label2,为经过处理后的标签，主要去除那些经过数据处理后，商品描述消失了的标签
+
+
+model文件夹中文件说明： data/original/model
+此处用于保存原始fasttext十折交叉验证得到的模型，大约十个模型，大约23g大小。

@@ -1,0 +1,26 @@
+本文件仅说明本文件中存在的文件，或者将在程序运行过程中出现的文件，不同文件夹中训练集的定义略有差异，不可等同。文件地址：data/bootstarp
+
+train.tsv，为用50万数据经过数据预处理后分离得到的训练集
+test.tsv，为用50万数据经过数据预处理后分离得到的测试集
+注：上述两个文件以7：3的形式分离
+
+
+train文件夹中文件说明:      data/bootstarp/train
+train_max.tsv，为训练集中分离得到的多数类的数据文件
+train_min.tsv，为训练集中分离得到的少数类的数据文件
+
+train_product.tsv，为训练集分离得到的商品描述，已经经过数据预处理
+train_label.tsv，为训练集分离得到的商品标签
+
+train_bootstarp，为用于bootstarp不等比例欠采样的训练文件，此文件由程序自动生成
+train_bootstarp2.tsv，为train_bootstarp.tsv文件处理后的文件，处理方式为：打乱商品信息顺序
+
+
+test文件夹中文件说明：     data/bootstarp/test
+test_product.tsv，为测试集分离得到的商品描述
+test_label.tsv，为测试集得到的商品标签
+test_label_predict.tsv,bootsarp结合不等比例欠采样+fasttext预测得到的测试集商品标签，用于最终准确率的判定。
+
+
+model文件夹中文件说明：  data/boptstarp/model
+此处用于保存bootstarp不等比例欠采样得到的模型，本项目中一共进行了80次不等比例欠采样，最终文件夹的大小大约180g

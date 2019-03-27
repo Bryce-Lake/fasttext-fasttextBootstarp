@@ -1,0 +1,16 @@
+此文件说明仅包含本文件夹中的文件
+注：不包含bootstarp,original两个文件夹中的文件，请点开两文件夹查看详细文件说明
+
+如果需要训练请在该文件夹导入utf-8格式文件，文件名为train.tsv
+如果需要批量预测全部数据，请在该文件夹，导入utf-8格式文件，文件名为train_predict.tsv
+如果文件名有差异，请在代码中更改
+
+original文件夹中为使用原始fasttext中需要的文件
+bootstarp文件夹中为使用bootstarp不等比例欠采样+fasttext中需要的文件
+
+
+dictionary.txt为数据预处理需要的分词字典
+stop.txt为数据预处理需要的停用词字典，可自行添加
+stop_words.txt为经过处理后的停用词字典，主要处理格式，空行
+
+train_new.tsv，为将50万已标注数据集分词后，重组的文件，已符合fasttext训练要求的数据形式
